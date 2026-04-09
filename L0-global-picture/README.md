@@ -31,6 +31,8 @@
 - перечень активных top-risks;
 - глобальные bottlenecks;
 - статус критичных инициатив;
+- портфель проектов и их видимость;
+- карта стратегических целей и contributing projects;
 - карта основных зависимостей между доменами;
 - ссылки на L1.
 
@@ -43,4 +45,6 @@
 - `key_changes`
 - `key_risks`
 - `next_attention_targets`
+- `strategic_goals`
+- `portfolio_projects`
 - `links_to_L1`

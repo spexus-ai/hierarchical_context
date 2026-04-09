@@ -27,6 +27,7 @@
 - давать summary изменений для соседей;
 - обеспечивать drill-down в evidence;
 - уменьшать surprise-эффект при релизах и интеграции.
+- агрегировать evidence в change streams по проектам и ownership zones, а не складывать всё в один поток.
 
 ## Какие решения принимаются
 
@@ -39,6 +40,10 @@
 ## Обязательные поля карточки изменения
 
 - `title`
+- `change_stream_id`
+- `portfolio_id`
+- `primary_project`
+- `owning_l2`
 - `why`
 - `scope`
 - `affected_areas`
@@ -48,3 +53,9 @@
 - `owner`
 - `updated_at`
 - `links_to_L4`
+
+## Дополнительные правила
+
+- каждый change stream обязан принадлежать конкретной зоне `L2`;
+- если ownership не определён, узел не считается валидным L3 и должен быть отправлен в triage;
+- один change stream может иметь несколько `related_projects`, но primary owner на уровне `L2` всегда один.
