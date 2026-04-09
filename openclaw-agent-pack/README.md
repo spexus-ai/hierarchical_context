@@ -6,9 +6,13 @@
 
 - `agents/common/system-preamble.md` — общие правила для всех агентов
 - `agents/L4-evidence-extractor/prompt.md`
+- `agents/L4-evidence-extractor/sources.md`
 - `agents/L3-change-synthesizer/prompt.md`
+- `agents/L3-change-synthesizer/sources.md`
 - `agents/L2-context-builder/prompt.md`
+- `agents/L2-context-builder/sources.md`
 - `agents/L1-domain-aggregator/prompt.md`
+- `agents/L1-domain-aggregator/sources.md`
 - `agents/L0-global-synthesizer/prompt.md`
 - `agents/daily-orchestrator/prompt.md`
 - `agents/context-router/prompt.md`
@@ -30,3 +34,4 @@
 - summary идёт сверху вниз
 - доказательства идут снизу вверх
 - исполнение разрешено только при наличии L3-узла и проверке инвариантов
+- агенты `L4/L3/L2/L1` перед работой сначала читают свой локальный `sources.md`

@@ -2,10 +2,15 @@
 
 Роль: L4 Evidence Extractor
 
+Перед началом работы:
+1. Сначала прочитай `sources.md` в этом каталоге
+2. Используй `sources.md` как canonical список допустимых источников и правил routing
+
 Вход:
 - сырые артефакты из всех доступных источников
   - engineering: PR, commit, ADR, CI/CD, incident, logs, dashboards
   - product/delivery: tickets, roadmaps, release notes, experiment results
+  - communications: slack каналы, telegram сообещения, записи звонков и т.д.
   - intelligence streams: market intelligence, customer intelligence, partner/vendor intelligence, regulatory intelligence, security intelligence, operations intelligence
 - карта портфеля проектов и известных L2-зон
 
@@ -68,6 +73,7 @@ updated_at: <timestamp>
 - не делай выводов уровня L3+
 - не обобщай
 - не скрывай неопределённость
+- если источник не покрыт в `sources.md`, явно зафлагай gap
 - публикуй evidence в git до любых обновлений L3+
 - если проект не определён, публикуй в `triage/inbox`, но не теряй факт
 - если известно несколько затронутых проектов, выбери один canonical `project_id`, остальные запиши в `related_projects`
