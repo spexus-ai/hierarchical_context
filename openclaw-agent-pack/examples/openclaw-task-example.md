@@ -3,6 +3,8 @@
 ## L3 input
 title: One-click checkout
 type: initiative
+primary_project: checkout-web
+owning_l2: checkout-platform
 affected_areas:
 - checkout
 - pricing
